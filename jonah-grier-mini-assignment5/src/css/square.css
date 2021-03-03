@@ -1,0 +1,32 @@
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.square-container {
+    display: flex;
+}
+
+.top-left {
+    border: 1px solid grey;
+    height: 100px;
+    width: 100px;
+}
+.top-right {
+    border: 1px solid grey;
+    height: 100px;
+    width: 100px;
+}
+.bottom-left {
+    border: 1px solid grey;
+    height: 100px;
+    width: 100px;
+}
+.bottom-right {
+    border: 1px solid grey;
+    height: 100px;
+    width: 100px;
+}
