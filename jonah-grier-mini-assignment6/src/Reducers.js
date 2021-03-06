@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
+import CounterReducer from './CounterReducer';
+import DiceSumReducer from './DiceSumReducer';
 
 export default combineReducers({
-
-    // map our reducers to our actions
-    // count: CounterReducer
-    // rollDice: RollDiceReducer
+    count: CounterReducer,              // { type: "ROLL" }
+    total_sum: DiceSumReducer,          // { type: "SUM" }
 })
