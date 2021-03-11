@@ -40,7 +40,6 @@ let mapDispatchToProps = function (dispatch, props) {
 let mapStateToProps = function (state, props) {
     return {
         sum: state.sum.total_sum,
-        num: state.sum.recent_num,
         roll_array: state.sum.values,
     }
 }

@@ -1,5 +1,4 @@
 export default function SumReducer(state = {
-    recent_num: 0,
     total_sum: 0,
     values: [],
 }, action) {
@@ -11,11 +10,11 @@ export default function SumReducer(state = {
 
         let sumCount = state.values.reduce((a, b) => (a + b), 0)
         return {
-            ...state, recent_num: dieValue, total_sum: sumCount,
+            ...state, total_sum: sumCount,
         }
     } else if (action.type === "CLEAR") {
         return {
-            recent_num: 0, total_sum: 0, values: []
+            total_sum: 0, values: []
         }
     }
     return state;
