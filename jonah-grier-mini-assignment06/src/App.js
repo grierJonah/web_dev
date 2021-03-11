@@ -2,25 +2,29 @@ import './App.css';
 import React from 'react';
 import { connect } from 'react-redux';
 import Sum from './Sum';
+import Die from './Die';
 
 class App extends React.Component {
-
-    constructor(props) {
-        super(props);
-
-    }
 
     onclickDie(action) {
         this.props.dispatch({ type: action })
     }
 
     render() {
+
         return (
             <div className="container">
                 <div className="inner-container">
                     <button className="main-button" onClick={() => this.onclickDie("ROLL")}>Roll Dice</button>
                     <button className="main-button" onClick={() => this.onclickDie("CLEAR")}>Clear Dice</button>
-                    <Sum sum={this.props.sum} num={this.props.num}></Sum>
+                    <Sum sum={this.props.sum}></Sum>
+                    <div className="squares">
+                        {this.props.roll_array.map((item) => {
+                            return (
+                                <Die key={item} num={item}></Die>
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
         );
