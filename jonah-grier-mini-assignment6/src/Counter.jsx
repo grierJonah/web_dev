@@ -13,7 +13,8 @@ export default class Counter extends React.Component {
     render() {
         return (
             <div>
-                <h1 id="sum-count">Roll: {this.props.num} , Sum: {this.props.sumNum}</h1>
+                <h1 id="sum-count">Sum: {this.props.sumNum}</h1>
+                {/* <h1 id="sum-count">Roll: {this.props.num} , Sum: {this.props.sumNum}</h1> */}
                 {/* <h2 id="sum">Other Sum: {arrayToNum()}</h2> */}
             </div>
         );

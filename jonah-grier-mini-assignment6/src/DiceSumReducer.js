@@ -1,4 +1,3 @@
-import { StaticReadUsage } from "three";
 
 export default function DiceSumReducer(count = 0, action) {
     if (action.type === "SUM") {
