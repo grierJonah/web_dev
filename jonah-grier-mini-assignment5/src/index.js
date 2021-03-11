@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import Square from './square'
 import reportWebVitals from './reportWebVitals';
 import SquareGrid from './SquareGrid';
 
