@@ -1,7 +1,7 @@
-/* html, body {
-  margin: 0;
-  padding: 0;
-} */
+
+
+
+
 
 .container {
   height: 100vh;
@@ -12,9 +12,9 @@
 }
 
 button {
-  padding: 0px 20px;
+  padding: 0px 15px;
   margin: 0 1px;
-  font-size: 26px;
+  font-size: 45px;
 }
 button:hover {
   background-color: lightblue;
@@ -24,23 +24,25 @@ button:active {
   box-shadow: 5px gray;
   transform: translateX(1px);
 }
-#sum-count {
+.sum-count {
   font-family: 'Times New Roman', Times, serif;
   font-size: 64px;
 }
 
 .squares {
   display: flex;
-  flex-direction: row;
-  justify-content:flex-start;
   flex-wrap: wrap;
+  margin-right: 30%;
   position: absolute;
-  text-align: center;
-  vertical-align: middle;
 }
 
 .dice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid grey;
-  height: 75px;
-  width: 75px;
+  height: 80px;
+  width: 80px;
+  margin: 0px 10px 10px 0px;
+  font-size: 50px;
 }

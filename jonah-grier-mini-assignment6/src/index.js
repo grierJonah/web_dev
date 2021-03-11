@@ -8,8 +8,7 @@ import reportWebVitals from './reportWebVitals';
 
 import Reducers from './Reducers';
 
-
-const store = createStore(Reducers)
+const store = createStore(Reducers);
 
 ReactDOM.render(
   <React.StrictMode>
