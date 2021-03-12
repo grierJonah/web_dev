@@ -1,3 +1,10 @@
+# Code Requirements for Mini Assignment 6
+1 Container --> App.js is the main container where the application builds from. Index.js contains the store
+1 Action    --> `onclickDie()` is the main action that dictates the application
+1 Reducer   --> SumReducer.js takes the action and delivers specific results.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
