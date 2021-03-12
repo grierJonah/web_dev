@@ -1,7 +1,7 @@
 # Code Requirements for Mini Assignment 6
 1 Container --> App.js is the main container where the application builds from. Index.js contains the store
-1 Action    --> `onclickDie()` is the main action that dictates the application
-1 Reducer   --> SumReducer.js takes the action and delivers specific results.
+<br>1 Action    --> `onclickDie()` is the main action that dictates the application
+<br>1 Reducer   --> SumReducer.js takes the action and returns specific results. During the "ROLL" action, the reducer gets a random index between 0-5, adds it to a list, and returns the list and the sum of the list. During the "CLEAR" action, the reducer sets the current sum back to 0 and resets the list to an empty list.
 
 
 
